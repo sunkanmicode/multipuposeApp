@@ -8,25 +8,24 @@ import { useSelector } from "react-redux";
 const DashboardScreen = ({ navigation }) => {
   const userInfo = useSelector((state) => state.user);
 
-  //  console.log(email);
   const data = [
     {
       title: "Note Taking",
       icon: (
-        <SimpleLineIcons name="notebook" size={50} color="rgb(12 74 110)" />
+        <SimpleLineIcons name="notebook" size={50} color="rgb(22 101 52)" />
       ),
     },
     {
       title: "News",
-      icon: <Entypo name="news" size={50} color="rgb(12 74 110)" />,
+      icon: <Entypo name="news" size={50} color="rgb(22 101 52)" />,
     },
     {
       title: "shopping",
-      icon: <AntDesign name="shoppingcart" size={50} color="rgb(12 74 110)" />,
+      icon: <AntDesign name="shoppingcart" size={50} color="rgb(22 101 52)" />,
     },
     {
       title: "Real Estate",
-      icon: <AntDesign name="home" size={50} color="rgb(12 74 110)" />,
+      icon: <AntDesign name="home" size={50} color="rgb(22 101 52)" />,
     },
   ];
   return (

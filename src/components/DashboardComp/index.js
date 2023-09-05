@@ -6,15 +6,15 @@ import { SimpleLineIcons } from "@expo/vector-icons";
 
 const DashboardComp = ({ data, userInfo, navigation }) => {
   return (
-    <View className="flex-1 py-10 px-6 ">
+    <View className="flex-1  py-10 px-6 ">
       <View className="items-center pt-5 "></View>
       <View>
         <View className="pt-5">
-          <Text className="text-xl text font-semibold">
-            Hello {userInfo.data.email},{" "}
+          <Text className="font-bold text-[20px] text-green-800">
+            Multispurpose Dashboard
           </Text>
-          <Text className="font-bold text-[18px]">
-            Welcome to your Dashboard
+          <Text className="text-sm text text-green-950 font-semibold">
+            Welcome {userInfo.data.email}
           </Text>
 
           <FlatList
@@ -24,7 +24,7 @@ const DashboardComp = ({ data, userInfo, navigation }) => {
             //   keyExtractor={(item) => String(item.id)}
             renderItem={({ item }) => (
               <TouchableOpacity
-                className="w-[170px] h-[260] items-center justify-center mx-1 mt-4 bg-slate-300"
+                className="w-[170px] h-[260] items-center justify-center mx-1 mt-4 bg-green-400 rounded-md"
                 onPress={() => {
                   item.title == "Note Taking"
                     ? navigation.navigate("NoteTakingScreen")
@@ -36,7 +36,7 @@ const DashboardComp = ({ data, userInfo, navigation }) => {
                 }}
               >
                 <View className="">{item.icon}</View>
-                <Text className="text-lg">{item.title}</Text>
+                <Text className="text-lg text-green-950">{item.title}</Text>
               </TouchableOpacity>
             )}
           />

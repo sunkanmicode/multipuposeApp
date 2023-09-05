@@ -7,8 +7,7 @@ import { useSelector } from "react-redux";
 export default function AppNavigation() {
   const { isLoggedIn } = useSelector((state) => state.user);
 
-  const [isAuthenticated, setIsAuthenticated] = React.useState(isLoggedIn);
-  console.log(isLoggedIn,isAuthenticated, "isLoggedIn");
+  // const [isAuthenticated, setIsAuthenticated] = React.useState(isLoggedIn);
 
   return (
     <NavigationContainer>

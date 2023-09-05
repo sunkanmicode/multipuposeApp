@@ -41,9 +41,7 @@ const CustomInput = ({
   };
   return (
     <View className="py-3">
-      {label && (
-        <Text className="text-[#2C3131] text-sm">{label}</Text>
-      )}
+      {label && <Text className="text-green-950 text-sm">{label}</Text>}
       <View
         className={`px-2 h-14 border border-gray-300 rounded-md items-center mt-2 ${getFlexDirection()} ${getBorderColor()}`}
       >
@@ -65,11 +63,7 @@ const CustomInput = ({
           }}
         />
       </View>
-      {error && (
-        <Text className="text-red-700 text-xs pt-2">
-          {error}
-        </Text>
-      )}
+      {error && <Text className="text-red-700 text-xs pt-2">{error}</Text>}
     </View>
   );
 };

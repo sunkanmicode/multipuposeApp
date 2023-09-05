@@ -27,10 +27,10 @@ const LoginComp = ({
       </View>
       <View className="">
         <View className="mb-10 items-center">
-          <Text className="text-1xl">Welcome To Multipurpose App,</Text>
-          <Text className="text-[#6C7072] text-xs">
-            Good to see you.
+          <Text className="text-1xl text-green-800">
+            Welcome To Multipurpose App
           </Text>
+          <Text className="text-green-950 text-xs">Good to see you.</Text>
         </View>
         <CustomInput
           label="Email Address"
@@ -39,8 +39,6 @@ const LoginComp = ({
             onchangeText("email", value);
           }}
           placeholder={"Input your email adddres"}
-          // style={styles.input}
-          // error={"This Feild is require"}
         />
 
         <CustomInput
@@ -73,8 +71,8 @@ const LoginComp = ({
         <CustomButton
           primary
           title="Login"
-        //   loading={isLoading}
-        //   disabled={isLoading}
+          //   loading={isLoading}
+          //   disabled={isLoading}
           onPress={onSubmit}
         />
       </View>

@@ -15,13 +15,13 @@ const NewfeedComp = ({ navigation, data, loading, error }) => {
         >
           <MaterialIcons name="keyboard-arrow-left" size={24} color="black" />
         </TouchableOpacity>
-        <Text className="text-[18px] text-[#090A0A]">New Feeds</Text>
+        <Text className="text-[18px] text-green-800 font-bold">New Feeds</Text>
         <View />
       </View>
       {loading && <ActivityIndicator size={50} className="py-20" />}
       {!loading && (
         <FlatList
-        showsVerticalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
           data={data}
           renderItem={({ item }) => (
             <TouchableOpacity
@@ -32,14 +32,14 @@ const NewfeedComp = ({ navigation, data, loading, error }) => {
               }}
             >
               <View className="flex-row items-center">
-                <View className="w-[30px] h-[30px] bg-[#E5E9EB] items-center justify-center rounded-full mr-2">
+                <View className="w-[30px] h-[30px] bg-green-200 items-center justify-center rounded-full mr-2">
                   <Text>{item.id}</Text>
                 </View>
                 <View>
-                  <Text className="font-[PlusMedium] text-[13px] w-[300]">
+                  <Text className="font-[PlusMedium] text-[13px] w-[300] text-green-800 ">
                     {item.title}
                   </Text>
-                  <Text className=" w-[300] font-[PlusMedium] text-[10px] text-[#CCCCCC]">
+                  <Text className=" w-[300] font-[PlusMedium] text-[10px] text-green-950">
                     {item.body}
                   </Text>
                 </View>

@@ -16,10 +16,10 @@ const CustomButton = ({
 }) => {
   const getBgColor = () => {
     if (disabled) return "bg-slate-300";
-    if (primary) return "bg-teal-500";
+    if (primary) return "bg-green-400";
   };
 
-  const disabledTextBtn = disabled ? "text-black" : "text-white";
+  const disabledTextBtn = disabled ? "text-black" : "text-black";
 
   return (
     <TouchableOpacity
