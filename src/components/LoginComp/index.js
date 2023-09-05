@@ -44,7 +44,7 @@ const LoginComp = ({
         />
 
         <CustomInput
-          label="Create password"
+          label="Password"
           // value={value2}
           secureTextEntry={isSecureEntry}
           onChangeText={(value) => {

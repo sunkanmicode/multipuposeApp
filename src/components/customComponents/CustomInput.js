@@ -56,7 +56,7 @@ const CustomInput = ({
           multiline={multiline}
           keyboardType={keyboardType}
           className="flex-1 h-11 px-2"
-          // style={style}
+          style={style}
           onFocus={() => {
             setFocused(true);
           }}
